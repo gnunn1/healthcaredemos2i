@@ -51,7 +51,7 @@ Create new project to host all applications
 
 Before we get started, first, create a messaging service
 
-		$ oc new-app amq62-basic --param=MQ_PROTOCOL=openwire
+		$ oc new-app --template=amq62-basic --param=MQ_USERNAME=admin --param=MQ_PASSWORD=admin --param=MQ_PROTOCOL=openwire
 
 Start build and deploying healthcare applications                  
 
