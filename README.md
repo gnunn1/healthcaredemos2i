@@ -65,11 +65,11 @@ Start build and deploying healthcare applications
 
 Expose all service to route.
 
-		$ oc expose svc clinicservice
+		$ oc expose svc clinicservice --target-port=websocket
 		$ oc expose svc fhiresb
 		$ oc expose svc healthwebconsole
 		$ oc expose svc hisesb
-		$ oc expose svc laboratoryservice
+		$ oc expose svc laboratoryservice --target-port=websocket
 		$ oc expose svc radiologyservice
 
 Go to  https://github.com/weimeilin79/healthcareweb, clone it to your own repository
